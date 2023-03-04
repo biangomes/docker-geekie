@@ -1,0 +1,17 @@
+host: geek
+datacenter:
+  location: São Paulo
+  router: 42
+  switch: 34
+---  # Um arquivo com duas configurações
+host: udemy
+datacenter:
+  location: Colorado
+  router: 23
+  switch: 21
+---
+host: edX
+datacenter:
+  location: Palo Alto
+  router: 4
+  switch: 2

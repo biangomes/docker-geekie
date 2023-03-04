@@ -1,0 +1,15 @@
+# Âncoras são utilizadas para armazenar e reusar dados. É definida por um "&" e referenciada por *
+---
+host: udemy
+datacenter:
+  location: &CO Colorado
+---
+host: twitter
+datacenter:
+  location: *CO
+---
+roles: &ghost
+  - webserver
+  - database
+---
+roles: *ghost

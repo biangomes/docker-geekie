@@ -1,0 +1,69 @@
+# Referencia: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+---
+# A list of tasty fruits
+#- Apple
+#- Orange
+#- Strawberry
+#- Mango
+
+
+# An employee record
+martin2:
+  name: Martin D'vloper
+  job: Developer
+  skill: Elite
+---
+# More complicated data structure
+- martin:
+  name: Martin D'vloper
+  job: Developer
+  skills:
+    - python
+    - perl
+    - pascal
+- bia:
+  name: Bia Pythonica
+  job: Developer
+  skills:
+    - lisp
+    - fortran
+    - erlang
+
+---
+martin: {name: Martin D'vloper, job: Developer, skill: Elite}
+['Apple', 'Orange', 'Strawberry', 'Mango']
+---
+include_newlines: |
+              exactly as you see
+              will appear these three
+              lines of poetry
+
+fold_newlines: >
+             this is really a
+             single line of text
+             despite appearances
+
+
+# An employee record
+name: Martin D'vloper
+job: Developer
+skill: Elite
+employed: True
+foods:
+  - Apple
+  - Orange 
+  - Strawberry
+  - Mango
+languages:
+  perl: Elite
+  python: Elite
+  pascal: Lame
+education:
+  4 GCSEs
+  3 A-Levels
+  BSc in the Internet of Things
+
+# This is a variable
+foo: "{{ variable }}"
+...
